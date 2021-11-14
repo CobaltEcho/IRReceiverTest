@@ -22,10 +22,10 @@ void loop() {
     uint16_t RemoteIRNumber = IrReceiver.decodedIRData.command;
     Serial.println(RemoteIRNumber, HEX);
     
-    if (RemoteIRNumber == 0x45){
+    if (RemoteIRNumber == 0x48){
       SaySomething();
     }
-    if (RemoteIRNumber == 0x46){
+    if (RemoteIRNumber == 0x47){
       SaySomething2();
     }
     IrReceiver.resume();
